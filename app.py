@@ -39,7 +39,7 @@ def buscar_usuario(usuario_id: int):
      for usuario in empresa_db:
          if usuario["id"] == usuario_id:
              return usuario
-     raise HTTPException(status_code=404, detail="Usuário não encontrado.")
+     raise HTTPException(status_code=404, detail="Usuário não encontrado.") #alteração
 
 # # Rota raiz
 # @app.get("/")
